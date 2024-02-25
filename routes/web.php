@@ -3,7 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\CholloController;
 
-
+Route::resource('chollos', CholloController::class);
 Route::get('/chollos', [CholloController::class, 'index'])->name('chollos.index');
 Route::get('/chollos/{id}', [CholloController::class, 'show'])->name('chollos.show');
 Route::get('/chollos/create', [CholloController::class, 'create'])->name('chollos.create');

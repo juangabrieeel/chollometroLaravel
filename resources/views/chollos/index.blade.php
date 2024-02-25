@@ -21,6 +21,16 @@
                         <td>
                             <a href="{{ route('chollos.show', $chollo->id) }}" class="btn btn-info">Ver</a>
                             <a href="{{ route('chollos.edit', $chollo->id) }}" class="btn btn-primary">Editar</a>
+
+                        </td>
+                        <td>
+                            <!-- Botón de Eliminar -->
+                            <form action="{{ route('chollos.destroy', $chollo->id) }}" method="post" style="display: inline;">
+                                @csrf
+                                @method('delete')
+                                <button type="submit" class="btn btn-danger"
+                                    onclick="return confirm('¿Estás seguro de que deseas eliminar este chollo?')">Eliminar</button>
+                            </form>
                         </td>
                     </tr>
                 @endforeach

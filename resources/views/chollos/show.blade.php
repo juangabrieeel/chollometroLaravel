@@ -1,7 +1,5 @@
 @extends('layouts.app')
 
-@extends('layouts.app')
-
 @section('content')
     <div class="container">
         <h1>Detalles del Chollo</h1>

@@ -51,5 +51,11 @@ class CholloController extends Controller
 
         return redirect()->route('chollos.index')->with('success', 'Chollo eliminado exitosamente');
     }
-}
 
+
+    public function show($id)
+    {
+        $chollo = Chollo::findOrFail($id);
+        return view('chollos.show', compact('chollo'));
+    }
+}

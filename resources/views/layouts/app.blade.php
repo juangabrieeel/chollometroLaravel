@@ -29,7 +29,7 @@
 
     <!-- Footer -->
     <footer class="footer">
-        <p>&copy; Juan Gabriel Caro Diaz</p>
+        <p>&copy; Juan Gabriel Caro Diaz {{ date('Y') }}</p>
     </footer>
 
 </body>
