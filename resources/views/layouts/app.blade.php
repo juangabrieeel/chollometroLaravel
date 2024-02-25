@@ -29,7 +29,7 @@
 
     <!-- Footer -->
     <footer class="footer">
-        <p>&copy; CholloOfertas {{ date('Y') }}</p>
+        <p>&copy; Juan Gabriel Caro Diaz</p>
     </footer>
 
 </body>

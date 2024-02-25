@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Chollo;
+use App\Models\Chollo;
 
 class CholloController extends Controller
 {
