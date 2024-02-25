@@ -17,7 +17,7 @@
                 @foreach ($chollos as $chollo)
                     <tr>
                         <td>
-                            <img src="{{ asset('img/' . $chollo->imagen) }}" alt="{{ $chollo->titulo }}"
+                            <img src="{{ asset('storage/img/' . $chollo->imagen) }}" alt="{{ $chollo->titulo }}"
                                 style="max-width: 100px; max-height: 100px;">
 
                         </td>

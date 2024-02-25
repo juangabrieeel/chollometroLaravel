@@ -5,6 +5,8 @@
         <h1>Detalles del Chollo</h1>
         <div>
             <h2>{{ $chollo->titulo }}</h2>
+            <img src="{{ asset('storage/img/' . $chollo->imagen) }}" alt="{{ $chollo->titulo }}"
+                style="max-width: 200px; max-height: 200px;">
             <p><strong>Categoría:</strong> {{ $chollo->categoria }}</p>
             <p><strong>Descripción:</strong> {{ $chollo->descripcion }}</p>
             <p><strong>URL:</strong> <a href="{{ $chollo->url }}" target="_blank">{{ $chollo->url }}</a></p>

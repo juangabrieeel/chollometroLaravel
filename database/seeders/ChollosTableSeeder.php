@@ -35,7 +35,7 @@ class ChollosTableSeeder extends Seeder
                 'precio' => 100.00,
                 'precio_descuento' => 80.00,
                 'disponible' => true,
-                'imagen' => Storage::url('img/2-chollo-ofertas.jpg'),
+                'imagen' => Storage::url('/img/2-chollo-ofertas.jpg'),
             ]
         ]);
     }
