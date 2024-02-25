@@ -6,6 +6,7 @@
         <table class="table">
             <thead>
                 <tr>
+                    <th>IMAGEN</th>
                     <th>ID</th>
                     <th>Título</th>
                     <th>Categoría</th>
@@ -15,6 +16,11 @@
             <tbody>
                 @foreach ($chollos as $chollo)
                     <tr>
+                        <td>
+                            <img src="{{ asset('img/' . $chollo->imagen) }}" alt="{{ $chollo->titulo }}"
+                                style="max-width: 100px; max-height: 100px;">
+
+                        </td>
                         <td>{{ $chollo->id }}</td>
                         <td>{{ $chollo->titulo }}</td>
                         <td>{{ $chollo->categoria }}</td>
@@ -25,7 +31,8 @@
                         </td>
                         <td>
                             <!-- Botón de Eliminar -->
-                            <form action="{{ route('chollos.destroy', $chollo->id) }}" method="post" style="display: inline;">
+                            <form action="{{ route('chollos.destroy', $chollo->id) }}" method="post"
+                                style="display: inline;">
                                 @csrf
                                 @method('delete')
                                 <button type="submit" class="btn btn-danger"

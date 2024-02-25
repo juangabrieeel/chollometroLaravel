@@ -19,6 +19,7 @@ class CreateChollosTable extends Migration
             $table->decimal('precio_descuento', 10, 2);
             $table->boolean('disponible');
             $table->timestamps();
+            $table->string('imagen')->nullable();
         });
     }
 

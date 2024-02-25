@@ -16,6 +16,7 @@ class Chollo extends Model
         'puntuacion',
         'precio',
         'precio_descuento',
-        'disponible'
+        'disponible',
+        'imagen'
     ];
 }
