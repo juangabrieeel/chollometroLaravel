@@ -4,7 +4,6 @@ namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
-use Illuminate\Support\Facades\Storage;
 
 class ChollosTableSeeder extends Seeder
 {
@@ -24,18 +23,16 @@ class ChollosTableSeeder extends Seeder
                 'precio' => 100.00,
                 'precio_descuento' => 80.00,
                 'disponible' => true,
-                'imagen' => Storage::url('/img/1-chollo-ofertas.jpg'),
             ],
             [
                 'titulo' => 'Chollo 2',
                 'descripcion' => 'Descripción del Chollo 2.',
                 'url' => 'https://example.com/chollo-2',
-                'categoria' => 'Mecanica',
+                'categoria' => 'Mecánica',
                 'puntuacion' => 5,
                 'precio' => 100.00,
                 'precio_descuento' => 80.00,
                 'disponible' => true,
-                'imagen' => Storage::url('/img/2-chollo-ofertas.jpg'),
             ]
         ]);
     }

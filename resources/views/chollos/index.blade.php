@@ -14,12 +14,14 @@
                 </tr>
             </thead>
             <tbody>
+                @php
+                    $a = 1;
+                @endphp
                 @foreach ($chollos as $chollo)
                     <tr>
                         <td>
-                            <img src="{{ asset('storage/img/' . $chollo->imagen) }}" alt="{{ $chollo->titulo }}"
-                                style="max-width: 100px; max-height: 100px;">
-
+                            <img src="{{ asset('img/' . $a . '-chollo-ofertas.jpg') }}" alt="Chollo {{ $a }}"
+                                style="max-width: 200px; max-height: 200px;">
                         </td>
                         <td>{{ $chollo->id }}</td>
                         <td>{{ $chollo->titulo }}</td>
@@ -27,9 +29,6 @@
                         <td>
                             <a href="{{ route('chollos.show', $chollo->id) }}" class="btn btn-info">Ver</a>
                             <a href="{{ route('chollos.edit', $chollo->id) }}" class="btn btn-primary">Editar</a>
-
-                        </td>
-                        <td>
                             <!-- Botón de Eliminar -->
                             <form action="{{ route('chollos.destroy', $chollo->id) }}" method="post"
                                 style="display: inline;">
@@ -40,6 +39,9 @@
                             </form>
                         </td>
                     </tr>
+                    @php
+                        $a++;
+                    @endphp
                 @endforeach
             </tbody>
         </table>
