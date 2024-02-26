@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="{{ asset('css/styles.css') }}"> <!-- Agrega el enlace a tu archivo de estilos CSS -->
 </head>
 
-<body>
+<body class="d-flex flex-column min-vh-100">
 
     <!-- Navbar -->
     <nav class="navbar">
@@ -25,10 +25,12 @@
     </nav>
 
     <!-- Contenido dinámico -->
-    @yield('content')
+    <div class="container flex-grow-1">
+        @yield('content')
+    </div>
 
     <!-- Footer -->
-    <footer class="footer">
+    <footer class="footer mt-auto">
         <p>&copy; Juan Gabriel Caro Diaz {{ date('Y') }}</p>
     </footer>
 
