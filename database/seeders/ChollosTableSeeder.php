@@ -15,23 +15,33 @@ class ChollosTableSeeder extends Seeder
         // Insertar datos de ejemplo
         DB::table('chollos')->insert([
             [
-                'titulo' => 'Chollo 1',
-                'descripcion' => 'Descripción del Chollo 1.',
+                'titulo' => 'Ratón óptico inalámbrico',
+                'descripcion' => 'El Ratón óptico inalámbrico NGS SNOOP-RB sobresale por su capacidad de conexión tri-modal, permitiendo trabajar con hasta tres dispositivos simultáneamente y facilitando la reconexión automática.',
                 'url' => 'https://example.com/chollo-1',
                 'categoria' => 'Electrónica',
                 'puntuacion' => 5,
-                'precio' => 100.00,
-                'precio_descuento' => 80.00,
+                'precio' => 12.00,
+                'precio_descuento' => 9.00,
                 'disponible' => true,
             ],
             [
-                'titulo' => 'Chollo 2',
-                'descripcion' => 'Descripción del Chollo 2.',
+                'titulo' => 'Frigorífico americano Midea',
+                'descripcion' => 'El frigorífico americano Midea modelo MDRS619FGF46 se destaca por su diseño en acero inoxidable y tecnología Total No Frost, que previene la formación de hielo.',
                 'url' => 'https://example.com/chollo-2',
-                'categoria' => 'Mecánica',
-                'puntuacion' => 5,
-                'precio' => 100.00,
-                'precio_descuento' => 80.00,
+                'categoria' => 'Electrodomesticos',
+                'puntuacion' => 10,
+                'precio' => 1185.00,
+                'precio_descuento' => 500.00,
+                'disponible' => true,
+            ],
+            [
+                'titulo' => 'Samsung Horno Pirolítico 76L',
+                'descripcion' => 'El Samsung Dual Cook ofrece flexibilidad culinaria mediante zonas de cocción independientes para preparar múltiples recetas a la vez, con temperaturas y tiempos diferentes.',
+                'url' => 'https://example.com/chollo-2',
+                'categoria' => 'Electrodomesticos',
+                'puntuacion' => 8,
+                'precio' => 600.00,
+                'precio_descuento' => 300.00,
                 'disponible' => true,
             ]
         ]);

@@ -61,6 +61,7 @@ h3 {
 }
 
 .table {
+    background-color: #e6e0e0;
     width: 100%;
     margin-bottom: 1rem;
     color: #212529;
@@ -188,6 +189,12 @@ button:hover {
 .show-details p {
     margin-bottom: 10px;
 }
+
+.with-border {
+    border-bottom: 1px solid #0e0d0d;
+    /* Puedes ajustar el color y grosor según tus preferencias */
+}
+
 
 .show-back-btn {
     display: inline-block;

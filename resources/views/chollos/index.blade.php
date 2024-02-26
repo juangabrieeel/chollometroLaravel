@@ -16,14 +16,14 @@
             <tbody>
                 @foreach ($chollos as $chollo)
                     <tr class="chollo-row">
-                        <td>
+                        <td class="chollo-image with-border">
                             <img src="{{ asset('img/' . $chollo->id . '-chollo-ofertas.jpg') }}"
                                 alt="Chollo {{ $chollo->id }}" style="max-width: 200px; max-height: 200px;">
                         </td>
-                        <td>{{ $chollo->id }}</td>
-                        <td>{{ $chollo->titulo }}</td>
-                        <td>{{ $chollo->categoria }}</td>
-                        <td>
+                        <td class="with-border">{{ $chollo->id }}</td>
+                        <td class="with-border">{{ $chollo->titulo }}</td>
+                        <td class="with-border">{{ $chollo->categoria }}</td>
+                        <td class="chollo-actions with-border">
                             <a href="{{ route('chollos.show', $chollo->id) }}" class="btn btn-info">Ver</a>
                             <a href="{{ route('chollos.edit', $chollo->id) }}" class="btn btn-primary">Editar</a>
                             <form action="{{ route('chollos.destroy', $chollo->id) }}" method="post"
